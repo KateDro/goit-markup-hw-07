@@ -19,7 +19,6 @@
   border-radius: 4px;
   transition: border-color 250ms $transition-timing-func,
     color 250ms $transition-timing-func;
-
   &:hover,
   &:focus {
     color: $brand-color;
