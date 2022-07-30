@@ -7,10 +7,10 @@
 .benefits__item {
   flex-basis: 270px;
 }
-.benefits__item:not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
 }
-.benefits__item::before {
+&::before {
   display: flex;
   content: "";
   height: 120px;
