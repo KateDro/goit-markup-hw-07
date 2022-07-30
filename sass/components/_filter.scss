@@ -1,3 +1,11 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter__btn {
   border: none;
   border-radius: 4px;
@@ -23,7 +31,4 @@
   letter-spacing: 0.03em;
   color: $header-textcolor;
   padding: 6px 22px 6px 22px;
-}
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }

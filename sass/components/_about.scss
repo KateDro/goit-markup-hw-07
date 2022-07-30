@@ -3,12 +3,10 @@
 }
 .about__list {
   display: flex;
+  gap: 30px;
 }
 .about__item {
   position: relative;
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .about__overlay {
   position: absolute;
