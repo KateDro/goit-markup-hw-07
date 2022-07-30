@@ -12,14 +12,14 @@
   color: $brdr-logo-clients;
   transition: background-color 250ms $transition-timing-func,
     color 250ms $transition-timing-func;
+  &:hover,
+  &:focus {
+    color: $white-clr;
+    background-color: $brand-color;
+  }
 }
 .social-media__list:not(:last-child) {
   margin-right: 10px;
-}
-.social-media__link:hover,
-.social-media__link:focus {
-  color: $white-clr;
-  background-color: $brand-color;
 }
 .social-media__icon {
   fill: currentColor;

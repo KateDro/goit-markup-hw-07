@@ -33,6 +33,7 @@
 .modal-win__btn--close {
   display: flex;
   position: absolute;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   top: 8px;
@@ -42,15 +43,14 @@
   border-radius: 50%;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
-  cursor: pointer;
   background-color: $white-clr;
   transition: fill 250ms $transition-timing-func;
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+  }
 }
-.modal-win__btn--close:hover,
-.modal-win__btn--close:focus {
-  fill: $brand-color;
-}
+
 .modal-win__form {
   display: flex;
   flex-direction: column;
@@ -64,6 +64,11 @@
   letter-spacing: 0.03em;
   color: $header-textcolor;
 }
+.modal-win__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
 .modal-win__label--field {
   font-size: 12px;
   line-height: 1.16;
@@ -71,14 +76,16 @@
   color: $main-textcolor;
   margin-bottom: 4px;
 }
-.modal-win__label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
 .modal-win__label--thumb {
   position: relative;
+  &:hover .modal-win__label--input,
+  &:focus-within .modal-win__label--input {
+    border-color: $brand-color;
+  }
+  &:hover .input-icon,
+  &:focus-within .input-icon {
+    fill: $brand-color;
+  }
 }
 .modalwin-field {
   width: 448px;
@@ -99,15 +106,16 @@
   padding: 12px 16px 12px 42px;
   outline: none;
   transition: border-color 250ms $transition-timing-func;
+  &::placeholder {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.modal-win__label--thumb:hover .modal-win__label--input,
-.modal-win__label--thumb:focus-within .modal-win__label--input {
-  border-color: $brand-color;
-}
-.modal-win__label--thumb:hover .input-icon,
-.modal-win__label--thumb:focus-within .input-icon {
-  fill: $brand-color;
-}
+
 .input-icon {
   position: absolute;
   top: 50%;
@@ -121,12 +129,4 @@
   height: 120px;
   padding: 12px 16px;
   resize: none;
-}
-.modal-win__label--input::placeholder {
-  position: absolute;
-  top: 13px;
-  left: 16px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }

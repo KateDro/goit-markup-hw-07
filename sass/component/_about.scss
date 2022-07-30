@@ -6,9 +6,9 @@
 }
 .about__item {
   position: relative;
-}
-.about__item:not(:last-child) {
-  margin-right: 30px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .about__overlay {
   position: absolute;

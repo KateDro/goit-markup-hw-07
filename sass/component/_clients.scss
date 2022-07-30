@@ -19,9 +19,10 @@
   border-radius: 4px;
   transition: border-color 250ms $transition-timing-func,
     color 250ms $transition-timing-func;
-}
-.clients__link:hover,
-.clients__link:focus {
-  color: $brand-color;
-  border-color: $brand-color;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
 }
