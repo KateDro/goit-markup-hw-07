@@ -12,6 +12,13 @@
   background-size: cover;
   background-position: center;
 }
+.banner {
+  font-family: $main-font;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: $secondary-bgcolor;
+}
 .btn {
   cursor: pointer;
   background-color: $brand-color;
@@ -26,13 +33,6 @@
   margin-top: 30px;
   border: none;
   transition: color 250ms $transition-timing-func;
-}
-.banner {
-  font-family: $main-font;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: $secondary-bgcolor;
 }
 .banner__title {
   font-family: $main-font;

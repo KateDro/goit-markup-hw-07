@@ -77,6 +77,21 @@ img {
 .header {
   border-bottom: 1px solid var(--border-head-clr);
 }
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  margin-right: 93px;
+}
+.logo__main-clr {
+  color: var(--header-textcolor);
+}
+.logo__second-clr {
+  color: var(--white-clr);
+}
 .nav {
   display: flex;
   align-items: center;
@@ -157,12 +172,6 @@ img {
 .nav__icon--contact {
   fill: currentColor;
   margin-right: 10px;
-}
-.logo__main-clr {
-  color: var(--header-textcolor);
-}
-.logo__second-clr {
-  color: var(--white-clr);
 }
 .overlay {
   max-width: 1600px;
@@ -423,15 +432,6 @@ footer {
   font-style: normal;
   margin-top: 20px;
 }
-.logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--brand-color);
-  margin-right: 93px;
-}
 .footer-box__adress {
   margin-right: 70px;
 }
@@ -516,7 +516,6 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .subscribe__btn--desc {
   margin-right: 10px;
   font-weight: 700;
@@ -524,7 +523,7 @@ footer {
 }
 
 /* portfolio */
-.pfolio-header {
+.pfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -532,28 +531,12 @@ footer {
   margin-bottom: 4px;
   color: var(--header-textcolor);
 }
-.pfolio-card-txt {
+.pfolio__card--desc {
   border: 1px solid var(--borderclr);
   border-top: none;
   padding: 20px 24px 20px 24px;
 }
-.btn-pfolio {
-  border: none;
-  border-radius: 4px;
-  background-color: var(--add-color);
-  transition: background-color 250ms var(--transition-timing-func),
-    color 250ms var(--transition-timing-func),
-    box-shadow 250ms var(--transition-timing-func);
-}
-.btn-pfolio:hover,
-.btn-pfolio:focus {
-  color: var(--white-clr);
-  background-color: var(--brand-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.pfolio-card-overlay {
+.pfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -566,41 +549,57 @@ footer {
   transform: translateY(101%);
   transition: transform 250ms var(--transition-timing-func);
 }
-.pfolio-card-desc {
+.pfolio__overlay--desc {
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-clr);
   padding: 63px 24px;
 }
-.pfolio-item {
+.pfolio__item {
   position: relative;
   overflow: hidden;
 }
-.pfolio-item:hover .pfolio-card-overlay {
+.pfolio__item:hover .pfolio__overlay {
   transform: translateY(0);
 }
-.pfolio-card-thumb {
+.pfolio__card {
   position: relative;
   overflow: hidden;
 }
-.list-pfolio {
+.pfolio__link {
+  display: block;
+  transition: box-shadow 250ms var(--transition-timing-func);
+}
+.pfolio__link:hover,
+.pfolio__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.pfolio-cardlink {
-  display: block;
-  transition: box-shadow 250ms var(--transition-timing-func);
+.filter__btn {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--add-color);
+  transition: background-color 250ms var(--transition-timing-func),
+    color 250ms var(--transition-timing-func),
+    box-shadow 250ms var(--transition-timing-func);
 }
-.pfolio-cardlink:hover,
-.pfolio-cardlink:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.filter__btn:hover,
+.filter__btn:focus {
+  color: var(--white-clr);
+  background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-.list-pfolio-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.btn-pfoliotxt {
+.filter__btn--desc {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;

@@ -1,6 +1,3 @@
-.header {
-  border-bottom: 1px solid $border-head-clr;
-}
 .nav {
   display: flex;
   align-items: center;
@@ -73,7 +70,6 @@
 .nav__link--contact {
   color: $main-textcolor;
 }
-
 .nav__item--contact {
   display: flex;
   align-items: center;
@@ -82,10 +78,4 @@
 .nav__icon--contact {
   fill: currentColor;
   margin-right: 10px;
-}
-.logo__main-clr {
-  color: $header-textcolor;
-}
-.logo__second-clr {
-  color: $white-clr;
 }
