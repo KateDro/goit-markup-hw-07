@@ -1,0 +1,86 @@
+.pfolio-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+  color: $header-textcolor;
+}
+.pfolio-card-txt {
+  border: 1px solid $borderclr;
+  border-top: none;
+  padding: 20px 24px 20px 24px;
+}
+.btn-pfolio {
+  border: none;
+  border-radius: 4px;
+  background-color: $add-color;
+  transition: background-color 250ms $transition-timing-func,
+    color 250ms $transition-timing-func,
+    box-shadow 250ms $transition-timing-func;
+}
+.btn-pfolio:hover,
+.btn-pfolio:focus {
+  color: $white-clr;
+  background-color: $brand-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.pfolio-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms $transition-timing-func;
+}
+.pfolio-card-desc {
+  font-size: 18px;
+  line-height: 1.56;
+  color: $white-clr;
+  padding: 63px 24px;
+}
+.pfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+.pfolio-item:hover .pfolio-card-overlay {
+  transform: translateY(0);
+}
+.pfolio-card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.list-pfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.pfolio-cardlink {
+  display: block;
+  transition: box-shadow 250ms $transition-timing-func;
+}
+.pfolio-cardlink:hover,
+.pfolio-cardlink:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.list-pfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-pfoliotxt {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-textcolor;
+  padding: 6px 22px 6px 22px;
+}

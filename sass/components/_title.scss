@@ -1,0 +1,21 @@
+.title-main {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-textcolor;
+  margin-bottom: 50px;
+}
+.title-secondary {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $header-textcolor;
+  margin-bottom: 10px;
+}
+.title-secondary__desc {
+  line-height: 1.71;
+}

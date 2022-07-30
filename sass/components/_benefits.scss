@@ -1,0 +1,35 @@
+.benefits {
+  display: flex;
+}
+.benefits__list {
+  display: flex;
+}
+.benefits__item {
+  flex-basis: 270px;
+}
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits__item::before {
+  display: flex;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $add-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(./images/img-icons/icon-antenna.svg);
+}
+.icon-time::before {
+  background-image: url(./images/img-icons/icon-clock.svg);
+}
+.icon-planning::before {
+  background-image: url(./images/img-icons/icon-diagram.svg);
+}
+.icon-technology::before {
+  background-image: url(./images/img-icons/icon-astronaut\ .svg);
+}

@@ -1,0 +1,47 @@
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./images/img-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn {
+  cursor: pointer;
+  background-color: $brand-color;
+  color: $white-clr;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border: none;
+  transition: color 250ms $transition-timing-func;
+}
+.banner {
+  font-family: $main-font;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: $secondary-bgcolor;
+}
+.banner__title {
+  font-family: $main-font;
+  color: $add-color;
+  margin: 0 auto;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

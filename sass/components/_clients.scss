@@ -1,0 +1,27 @@
+.clients__list {
+  --items: 6;
+  display: flex;
+  margin: 0 0 0 0;
+}
+.clients__card-set {
+  flex-basis: calc((100% - $indent * $items) / $items);
+  margin: calc($indent / 2);
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  color: $brdr-logo-clients;
+  border-color: $brdr-logo-clients;
+  border-radius: 4px;
+  transition: border-color 250ms $transition-timing-func,
+    color 250ms $transition-timing-func;
+}
+.clients__link:hover,
+.clients__link:focus {
+  color: $brand-color;
+  border-color: $brand-color;
+}

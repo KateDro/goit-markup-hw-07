@@ -1,0 +1,91 @@
+.header {
+  border-bottom: 1px solid $border-head-clr;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav__item:not(:last-child) {
+  justify-content: center;
+  margin-right: 50px;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $header-textcolor;
+  transition: color 250ms $transition-timing-func;
+}
+.nav__link--current {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $brand-color;
+  background-color: $white-clr;
+  transition: color 250ms $transition-timing-func;
+}
+.nav__link--current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: $brand-color;
+  border-radius: 2px;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: $brand-color;
+  border-radius: 2px;
+  opacity: 0;
+  transition: color 250ms $transition-timing-func;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: $brand-color;
+}
+.nav__list--contact {
+  display: flex;
+  margin-left: auto;
+}
+.nav__link--contact {
+  color: $main-textcolor;
+}
+
+.nav__item--contact {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.nav__icon--contact {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.logo__main-clr {
+  color: $header-textcolor;
+}
+.logo__second-clr {
+  color: $white-clr;
+}
